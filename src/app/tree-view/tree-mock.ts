@@ -15,7 +15,7 @@ export interface TreeNode {
   code: string;
   isOpen: boolean;
   active?: boolean;
-  question?:TreeQuestionModel
+  question?: TreeQuestionModel
 }
 
 const generateUUID = () => {
@@ -32,12 +32,13 @@ export const NODES: TreeNode[] = [
     name: 'Africa',
     isOpen: true,
     showChildren: false,
-    question:{
+    question: {
       "id": "1.1",
       "title": "What would you like us to improve in our service?",
       "value": "",
       "inputType": "text",
-      "hidden": true,
+      "hidden": false,
+
       "required": false,
       "showFollowUpValue": false,
     },
@@ -48,12 +49,13 @@ export const NODES: TreeNode[] = [
         name: 'Algeria',
         isOpen: true,
         showChildren: false,
-        question:{
+        question: {
           "id": "1.1",
           "title": "What would you like us to improve in our service?",
           "value": "",
           "inputType": "text",
-          "hidden": true,
+          "hidden": false,
+
           "required": false,
           "showFollowUpValue": false,
         },
@@ -64,12 +66,13 @@ export const NODES: TreeNode[] = [
             name: 'Algeris',
             isOpen: true,
             showChildren: false,
-            question:{
+            question: {
               "id": "1.1",
               "title": "What would you like us to improve in our service?",
               "value": "",
               "inputType": "text",
-              "hidden": true,
+              "hidden": false,
+
               "required": false,
               "showFollowUpValue": false,
             },
@@ -81,12 +84,13 @@ export const NODES: TreeNode[] = [
             name: 'Kazak',
             isOpen: true,
             showChildren: false,
-            question:{
+            question: {
               "id": "1.1",
               "title": "What would you like us to improve in our service?",
               "value": "",
               "inputType": "text",
-              "hidden": true,
+              "hidden": false,
+
               "required": false,
               "showFollowUpValue": false,
             },
@@ -100,12 +104,12 @@ export const NODES: TreeNode[] = [
         name: 'Angola',
         isOpen: true,
         showChildren: false,
-        question:{
+        question: {
           "id": "1.1",
           "title": "What would you like us to improve in our service?",
           "value": "",
           "inputType": "text",
-          "hidden": true,
+          "hidden": false,
           "required": false,
           "showFollowUpValue": false,
         },
@@ -117,12 +121,13 @@ export const NODES: TreeNode[] = [
         name: 'Benin',
         isOpen: true,
         showChildren: false,
-        question:{
+        question: {
           "id": "1.1",
           "title": "What would you like us to improve in our service?",
           "value": "",
           "inputType": "text",
-          "hidden": true,
+          "hidden": false,
+
           "required": false,
           "showFollowUpValue": false,
         },
@@ -136,12 +141,13 @@ export const NODES: TreeNode[] = [
     name: 'Asia',
     isOpen: true,
     showChildren: false,
-    question:{
+    question: {
       "id": "1.1",
       "title": "What would you like us to improve in our service?",
       "value": "",
       "inputType": "text",
-      "hidden": true,
+      "hidden": false,
+
       "required": false,
       "showFollowUpValue": false,
     },
@@ -152,12 +158,13 @@ export const NODES: TreeNode[] = [
         name: 'Afghanistan',
         isOpen: true,
         showChildren: false,
-        question:{
+        question: {
           "id": "1.1",
           "title": "What would you like us to improve in our service?",
           "value": "",
           "inputType": "text",
-          "hidden": true,
+          "hidden": false,
+
           "required": false,
           "showFollowUpValue": false,
         },
@@ -168,12 +175,13 @@ export const NODES: TreeNode[] = [
             name: 'Kabul',
             isOpen: true,
             showChildren: false,
-            question:{
+            question: {
               "id": "1.1",
               "title": "What would you like us to improve in our service?",
               "value": "",
               "inputType": "text",
-              "hidden": true,
+              "hidden": false,
+
               "required": false,
               "showFollowUpValue": false,
             },
@@ -187,12 +195,12 @@ export const NODES: TreeNode[] = [
         name: 'Armenia',
         isOpen: true,
         showChildren: false,
-        question:{
+        question: {
           "id": "1.1",
           "title": "What would you like us to improve in our service?",
           "value": "",
           "inputType": "text",
-          "hidden": true,
+          "hidden": false,
           "required": false,
           "showFollowUpValue": false,
         },
@@ -203,12 +211,13 @@ export const NODES: TreeNode[] = [
         code: 'AZER',
         name: 'Azerbaijan',
         showChildren: false,
-        question:{
+        question: {
           "id": "1.1",
           "title": "What would you like us to improve in our service?",
           "value": "",
           "inputType": "text",
-          "hidden": true,
+          "hidden": false,
+
           "required": false,
           "showFollowUpValue": false,
         },
@@ -228,12 +237,32 @@ export const NODES: TreeNode[] = [
         code: 'ROMA',
         name: 'Romania',
         showChildren: false,
+        question: {
+          "id": "1.1",
+          "title": "What would you like us to improve in our service?",
+          "value": "",
+          "inputType": "text",
+          "hidden": false,
+
+          "required": false,
+          "showFollowUpValue": false,
+        },
         children: [
           {
             uuid: generateUUID(),
             code: 'BUCU',
             name: 'Bucuresti',
             showChildren: false,
+            question: {
+              "id": "1.1",
+              "title": "What would you like us to improve in our service?",
+              "value": "",
+              "inputType": "text",
+              "hidden": false,
+
+              "required": false,
+              "showFollowUpValue": false,
+            },
             children: [],
           },
         ],
@@ -244,6 +273,16 @@ export const NODES: TreeNode[] = [
         name: 'Hungary',
         isOpen: true,
         showChildren: false,
+        question: {
+          "id": "1.1",
+          "title": "What would you like us to improve in our service?",
+          "value": "",
+          "inputType": "text",
+          "hidden": false,
+
+          "required": false,
+          "showFollowUpValue": false,
+        },
         children: [],
       },
       {
@@ -252,6 +291,16 @@ export const NODES: TreeNode[] = [
         name: 'Benin',
         isOpen: true,
         showChildren: false,
+        question: {
+          "id": "1.1",
+          "title": "What would you like us to improve in our service?",
+          "value": "",
+          "inputType": "text",
+          "hidden": false,
+
+          "required": false,
+          "showFollowUpValue": false,
+        },
         children: [],
       },
     ],
@@ -262,6 +311,15 @@ export const NODES: TreeNode[] = [
     name: 'North America',
     showChildren: false,
     isOpen: true,
+    question: {
+      "id": "1.1",
+      "title": "What would you like us to improve in our service?",
+      "value": "",
+      "inputType": "text",
+      "hidden": false,
+      "required": false,
+      "showFollowUpValue": false,
+    },
     children: [],
   },
 ];

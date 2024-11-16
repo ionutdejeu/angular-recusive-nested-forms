@@ -13,7 +13,7 @@
         "title": "What would you like us to improve in our service?",
         "value": "",
         "inputType": "text",
-        "hidden": true,
+        "hidden": false,
         "required": false,
         "showFollowUpValue": false,
         "showFollowUp": null
@@ -23,7 +23,7 @@
         "title": "Was there something particular that you dislike?",
         "value": null,
         "inputType": "checkbox",
-        "hidden": true,
+        "hidden": false,
         "required": false,
         "showFollowUpValue": true,
         "followUps": [
@@ -32,7 +32,7 @@
             "title": "Please describe:",
             "value": "",
             "inputType": "text",
-            "hidden": true,
+            "hidden": false,
             "required": false,
             "showFollowingValue": null,
             "followingQuestions": null
@@ -55,7 +55,7 @@
         "title": "Please share your comment with us:",
         "value": "",
         "inputType": "text",
-        "hidden": true,
+        "hidden": false,
         "required": false,
         "optional": true,
         "showFollowUpValue": false,

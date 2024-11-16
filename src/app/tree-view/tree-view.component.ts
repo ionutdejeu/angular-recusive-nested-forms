@@ -12,6 +12,7 @@ export class TreeViewComponent {
 
   ngOnInit() {
     this.setAllToFalse(this.tree);
+    console.log('tree',this.tree);
   }
 
   setAllToFalse(nodes:TreeNode[]) {
