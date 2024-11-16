@@ -1,0 +1,14 @@
+<div *ngIf="!question?.hidden" class="ml-6">
+  <h5 class="m-0 my-2">{{ question?.title }}</h5>
+
+  <div *ngIf="question?.inputType === 'text'" class="flex gap-2">
+    <input
+      type="text"
+      class="w-full border-round-sm line-height-3"
+      [value]="question?.value"
+      [(ngModel)]="textInput"
+      [ngStyle]="{ border: question?.required ? invalidBorder : validBorder }"
+      (ngModelChange)="onTextChange($event)"
+    />
+  </div>
+</div>

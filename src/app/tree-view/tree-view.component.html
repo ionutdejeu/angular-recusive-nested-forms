@@ -1,0 +1,31 @@
+<ul *ngIf="tree" class="tree">
+  <li *ngFor="let node of tree; let i = index">
+    <div class="label-container">
+      <span *ngIf="node.children.length != 0">
+        <img
+          src="/next.png"
+          class="arrow-btn"
+          [ngClass]="node.isOpen ? 'open-btn' : 'close-btn'"
+        />
+      </span>
+      <span
+        class="node-item"
+        (click)="toggleChild(node)"
+        [ngClass]="node.active ? 'node-active' : ''"
+      >
+        {{ node.name }}
+      </span>
+      <pre>{{ node.question | json }}</pre>
+      <input type="input" [(ngModel)]="node.name" />
+      <app-tree-question
+        [question]="node.question"
+        (valueChanged)="onValueChange(node)"
+      ></app-tree-question>
+    </div>
+    <app-tree-view
+      *ngIf="node.showChildren"
+      (selectedValue)="emitOnChildClicked($event)"
+      [tree]="node.children"
+    ></app-tree-view>
+  </li>
+</ul>

@@ -1,0 +1,10 @@
+<app-tree-view
+  [tree]="tree"
+  (selectedValue)="nodeSelected($event)"
+></app-tree-view>
+
+<div *ngIf="selectedNode" class="node-selected">
+  <b>Selected value : </b>{{ selectedNode }}
+</div>
+
+<pre>{{ tree | json }}</pre>
